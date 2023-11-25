@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Abril';
+    src: url('fonts/AbrilFatface-Regular.ttf');
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('fonts/Philosopher/Philosopher-Regular.ttf');
+}
+@font-face {
+    font-family: 'Muli';
+    src: url('fonts/Mulish/Mulish-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Playfair';
+    src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'SansPro';
+    src: url('fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf');
+}
+
+.hidden {
+    display: none;
+}
+
+.prompt-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: #A9317F solid 2px;
+    width: max-content;
+    background-color: white;
+}
+
+#boxes{
+    margin:20px 0px 20px 0px;
+    background-color: white;
+    font-size: 20px;
+}
+h1{
+    font-size: 100px;
+    font-family:Playfair;
+    font-weight: lighter;
+    text-decoration-color:#BBEB82;
+}
+h3{
+    font-size: 30px;
+    font-family: SansPro;
+    font-weight: lighter;
+}
+h2{
+    font-size: 60px;
+    font-family: Playfair;
+    font-weight: lighter;
+}
+p2{
+    font-size: 25px;
+    font-family: SansPro;
+    font-weight: lighter;
+}
+body{
+    background-color: white;
+}
+#page{
+    margin: 70px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circlebutton{
+    width: 150px;
+    height: 100px;
+    background-color: #E6F9CF;
+    color: black;
+    font-size: 18px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.circlebutton:hover {
+    background-color: #BBEB82;
+}
+#textareabox{
+    margin:20px 0px 20px 0px;
+    background-color: white;
+    width:400px;
+    height: 200px;
+    resize: none; 
+}
+p1{
+    font-size: 20px;
+    font-family: SansPro;
+}
+
+.answer{
+    padding:7px;
+    width: 100%;
+    border: 1px solid rgb(66,168,154);
+    width: max-content;
+    margin: 20px 20px 20px 0px;
+    max-width: 600px;
+}
+.answertwo{
+    padding:7px;
+    width: 100%;
+    border: 1px solid rgb(66,168,154);
+    width: max-content;
+    margin: 20px 20px 20px 0px;
+    max-width: 600px;
+}
+
+#text{
+    font-size: 18px;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 30px 30px 30px 0px; 
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+.tile {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 30px 30px 50px 20px;
+}
+
+.gridtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+    z-index: 1;
+    padding: 10px;
+    margin:0;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+}
+
+.tile img:hover{
+    transform: scale(1.2 , 1.2);
+}
+
+.gridtext h3{
+    margin-bottom: 1%;
+}
+
+
+canvas {
+    border: 2px solid #000;
+    margin-top: 50px;
+}
+
+
+#artprompts{
+    margin-top: 50px;
+    font-size: 15px;
+    height: 50px;
+    text-align: center;
+    border-color: #A9317F;
+}
+
+#undoBtn, #redoBtn{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+}
+#colorPicker{
+    width: 2rem;
+    height: 2rem;
+}
+#submitone, #submittwo{
+    background-color: #BBEB82;
+    border: none;
+    font-size: 20px;
+}
+#deco{
+    text-decoration: underline;
+    text-decoration-color:#A9317F;
+    white-space: nowrap;
+    display: inline-block;
+}

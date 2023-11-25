@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Button Prompts</title>
+</head>
+<body>
+    <div id="page">
+        <center>
+<h1><div id="deco">Anger:</div> Real-Time Support and Coping Strategies</h1>
+<h3 style="margin-top: 3%; margin-bottom: 3%;">Navigate your anger with tools, reflection, and art therapy for immediate relief and long-term well-being</h3>
+<h2 style="margin-bottom: 3%;">Step One: Writing Exercise </h2>
+<h3 style="margin-bottom: 3%;">What do you need more right now?</h3>
+
+<div class="button-container">
+    <button onclick="showPrompt(1)" class="circlebutton"><p1>to reflect on my emotions</p1></button>
+    <button onclick="showPrompt(2)" class="circlebutton" ><p1>to vent</p1></button>
+</div>
+
+
+<div id="prompt1" class="prompt-container hidden">
+    <form id="reflection">
+    <div id="one">
+        <h3>1. Reflect on Triggers:</h3>
+        <p1>What specific events triggered your recent anger? </p1>
+        <input type="text" placeholder="Add text" id="boxes"><br />
+        <p1>Are these triggers recurring?</p1>
+        <select name=”choice” id="boxes">
+            <option value=”yes”>yes</option>
+            <option value=”no”>no</option>
+        </select>
+    </div>
+    <div id="two">
+        <h3>2. Explore Physical Sensations:</h3>
+        <p1>How did your body physically react to anger? </p1>
+        <input type="text" placeholder="Add text" id="boxes"><br />
+        <p1>Are there consistent physical cues?</p1>
+        <select name="choice" id="boxes">
+            <option value=”yes”>yes</option>
+            <option value=”no”>no</option>
+        </select>
+    </div>
+    <div id="three">
+        <h3>3. Identify Emotional Responses:</h3>
+        <p1>Beyond anger, what other emotions accompanied it?</p1>
+        <input type="text" placeholder="Add text" id="boxes"><br />
+    </div>
+    <div id="four">
+        <h3>4. Analyze Thought Patterns:</h3>
+        <p1>What thoughts accompanied your anger? </p1>
+        <input type="text" placeholder="Add text" id="boxes"><br />
+        <p1>Do these thoughts align with reality?</p1>
+        <select name=”choice” id="boxes">
+            <option value=”yes”>yes</option>
+            <option value=”no”>no</option>
+        </select>
+    </div>
+    <div id="five">
+        <h3>5. Assess Coping Mechanisms:</h3>
+        <p1>How did you initially respond to anger?</p1>
+        <input type="text" placeholder="Add text" id="boxes"><br />
+        <p1>Were your coping mechanisms effective? </p1>
+        <select name=”choice” id="boxes">
+            <option value=”yes”>yes</option>
+            <option value=”no”>no</option>
+        </select>
+    </div>
+    <div id="six">
+        <h3>6. Visualize Ideal Responses:</h3>
+        <p1>Envision an ideal response to anger.How can you align your reactions with this ideal?</p1>
+        <input type="text" placeholder="Add text" id="boxes"><br />
+    </div>
+    <div id="seven">
+        <h3>7. Plan for Future Situations:</h3>
+        <p1>How can you proactively manage anger in similar situations?</p1>
+        <input type="text" placeholder="Add text" id="boxes"><br />
+    </div>
+    <div id="eight">
+        <h3>8. Express Gratitude to Shift Focus:</h3>
+        <p1>Amidst anger, what aspects of your life are you grateful for?</p1>
+        <input type="text" placeholder="Add text" id="boxes"><br />
+    </div>
+    <button type="submit" id="submitone" ><p1>send to the universe</p1></button>
+</form>
+<div id="positivemessage"></div>
+</div>
+
+
+<div id="prompt2" class="prompt-container hidden">
+    <form id="venting">
+        <p1>Estimate your anger level from 1 to 10</p1>
+        <input type="range" id="rangeInput" min="1" max="10" ><br />
+        <p1>What specific event triggered your recent anger? </p1><br />
+        <textarea placeholder="Add text" id="textareabox"></textarea><br />
+        <button type="submit" id="submittwo"  ><p1>send to the universe</p1></button>
+        <div id="positivemessagetwo"></div>
+    </form>
+</div>
+<h2 style="margin-top: 3%;"> Step Two: Discover Effective Coping Strategies</h2>
+<div class="image-grid">
+    <div class="tile" id="one">
+        <div class="gridtext">
+            <h3 style="font-weight: bold; font-size: 20px; font-family: Playfair;margin-bottom: 3%;">Deep Breathing Exercises</h3>
+            <p1 style="font-size: 17px;">Take a moment to practice deep breathing. It helps calm your body's response to anger. Try techniques like diaphragmatic breathing to promote relaxation.</p1>
+        </div>
+        <img src="images/1.jpg" alt="Image 1">
+    </div>
+    <div class="tile" id="two">
+        <div class="gridtext">
+            <h3 style="font-weight: bold; font-size: 20px;font-family: Playfair;margin-bottom: 3%;">Physical Activity</h3>
+            <p1 style="font-size: 17px;">Release tension and stress through physical activities. Whether it's a walk, hitting the gym, or practicing yoga, exercise is a powerful way to channel and dissipate anger.</p1>
+        </div>
+        <img src="images/2.jpg" alt="Image 2">
+    </div>
+    <div class="tile" id="three">
+        <div class="gridtext">
+            <h3 style="font-weight: bold; font-size: 20px;font-family: Playfair;margin-bottom: 3%;">Meditation</h3>
+            <p1 style="font-size: 17px;">Use meditation to manage anger. These practices help you stay present, fostering a thoughtful and measured response to anger triggers.</p1>
+        </div>
+        <img src="images/3.jpg" alt="Image 3">
+    </div>
+    <div class="tile" id="four">
+        <div class="gridtext">
+            <h3 style="font-weight: bold; font-size: 20px;font-family: Playfair;margin-bottom: 3%;">Counting to Ten (or Taking a Timeout)</h3>
+            <p1 style="font-size: 17px;">Take a brief pause by counting to ten before reacting to a situation. This simple strategy allows you to collect your thoughts and respond more calmly.</p1>
+        </div>
+        <img src="images/4.jpg" alt="Image 4">
+    </div>
+    <div class="tile" id="five">
+        <div class="gridtext">
+            <h3 style="font-weight: bold; font-size: 20px;font-family: Playfair;margin-bottom: 3%;">Expressing Yourself Creatively</h3>
+            <p1 style="font-size: 17px;">Explore creative outlets to express anger. Since our website includes art therapy, try drawing, painting, or engaging in other artistic expressions for catharsis.</p1>
+        </div>
+        <img src="images/5 2.jpg" alt="Image 5">
+    </div>
+    <div class="tile" id="six">
+        <div class="gridtext">
+            <h3 style="font-weight: bold; font-size: 20px;font-family: Playfair;margin-bottom: 3%;">Positive Affirmations</h3>
+            <p1 style="font-size: 17px;">Shift your focus and mindset by practicing positive affirmations. Create statements that counter negative thoughts, promoting a more optimistic outlook for emotional well-being.</p1>
+        </div>
+        <img src="images/6.jpg" alt="Image 6">
+    </div>    
+</div>
+<h2 style="margin-bottom: 3%;">Step Three: Healing Through Art</h2>
+<h3>Drawing helps channel anger and gain a sense of control over it. I invite you to use the following prompts for a better creative experience.</h3>
+
+
+<select name="artprompts" id="artprompts">
+    <option>Create an artistic representation of your current emotional landscape. Use colors, shapes, and symbols to express the range of emotions you're feeling.</option>
+    <option>Paint or draw something that represents what you want to release or let go of. Consider the colors and forms that symbolize this process for you.</option>
+    <option>Illustrate how you find calmness in the midst of chaos. Use the canvas to create a visual representation of your coping mechanisms.</option>
+    <option>Draw a symbol or scene that represents your inner strength. How can you visually convey resilience and power?</option>
+    <option>Explore the concept of transforming anger into a positive force. What imagery can represent this transformation in your artwork?</option>
+</select>
+
+<canvas id="myCanvas" width="800vw" height="500vh"></canvas><br />
+<div id="toolset">
+<button id="undoBtn"><</button>
+<button id="redoBtn">></button>
+<input type="color" id="colorPicker" value="#000000">
+<input type="range" id="lineWeight" min="1" max="20" value="5">
+</div>
+</center>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
