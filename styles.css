@@ -5,29 +5,12 @@
 }
 
 @font-face {
-    font-family: 'Abril';
-    src: url('fonts/AbrilFatface-Regular.ttf');
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url('fonts/poppins/Poppins-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Philosopher';
-    src: url('fonts/Philosopher/Philosopher-Regular.ttf');
-}
-@font-face {
-    font-family: 'Muli';
-    src: url('fonts/Mulish/Mulish-VariableFont_wght.ttf');
-}
-@font-face {
     font-family: 'Playfair';
-    src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+    src: url('PlayfairDisplay-VariableFont_wght.ttf');
 }
 @font-face {
     font-family: 'SansPro';
-    src: url('fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf');
+    src: url('SourceSans3-VariableFont_wght.ttf');
 }
 
 .hidden {
